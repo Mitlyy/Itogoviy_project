@@ -171,7 +171,7 @@
     def predictions(self, outputs):
         return outputs
 
-###3.2 SoftMax
+### 3.2 SoftMax
 <p align="center">
 <img src="Images/img_3.png" alt="drawing" width="200"/>
 </p>
@@ -530,23 +530,23 @@ SGD Параметры + нормализация
     
 Расчитывать только когда  > 0
 
-####L1
+#### L1
                 if layer.w_reg_l1 > 0:
                     reg_loss += layer.w_reg_l1 * \
                                            np.sum(np.abs(layer.weights))
     
-####L2
+#### L2
                 if layer.w_reg_l2 > 0:
                     reg_loss += layer.w_reg_l2 * \
                                            np.sum(layer.weights * \
                                                   layer.weights)
     
-####L1
+#### L1
                 if layer.b_reg_l1 > 0:
                     reg_loss += layer.b_reg_l1 * \
                                            np.sum(np.abs(layer.biases))
 
-####L2
+#### L2
                 if layer.b_reg_l2 > 0:
                     reg_loss += layer.b_reg_l2 * \
                                            np.sum(layer.biases * \
